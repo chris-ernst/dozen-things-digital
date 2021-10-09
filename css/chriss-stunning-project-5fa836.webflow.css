@@ -1,0 +1,89 @@
+.mdef-hero {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.mdef-hero-h1 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 4em;
+}
+
+.heading {
+  color: #2b54b4;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.mdef-project-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.mdef-content-card {
+  overflow: hidden;
+  height: auto;
+  max-width: 400px;
+  margin: 30px;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-decoration: none;
+}
+
+.mdef-content-card-thumbnail {
+  width: 320px;
+  height: 200px;
+  background-color: #3869e7;
+}
+
+.mdef-content-card-inner {
+  padding: 30px;
+}
+
+.mdef-content-card-title {
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .mdef-hero-h1 {
+    font-size: 3em;
+  }
+}
