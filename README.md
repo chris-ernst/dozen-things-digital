@@ -1,4 +1,4 @@
-# Repo for Dozen Things Digital
+# Dozen Things Digital
 
 ## About
 
@@ -6,10 +6,11 @@ A blog to document the progress in the Master of Design for Emergent Futures at 
 
 To see the site, please visit: https://chris-ernst.github.io/dozen-things-digital/
 
-## Change To-Dos 
+## Changelog
 - Set Hover State on Cards
-- Introduce Wireframe Style
+- Introduced Wireframe Style
 - Set up Article Page
+- Content Updates
 
 
 ## Git Cheat Sheet

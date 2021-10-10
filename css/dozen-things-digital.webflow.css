@@ -154,10 +154,6 @@ h4 {
   box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.07);
 }
 
-.nav-link-_-disabled {
-  color: #ececec;
-}
-
 .nav-link {
   font-family: 'Space Grotesk', sans-serif;
   color: #333;
@@ -197,10 +193,6 @@ h4 {
   font-size: 1.4em;
 }
 
-.brand-h4.article {
-  color: #0026ff;
-}
-
 .paragraph {
   font-family: 'PT Serif', serif;
   font-size: 1.3em;
@@ -210,6 +202,10 @@ h4 {
 
 .text-link {
   color: #333;
+}
+
+.text-link:hover {
+  color: #0026ff;
 }
 
 .header-image {
@@ -346,6 +342,10 @@ h4 {
   object-fit: cover;
 }
 
+.text-span {
+  font-weight: 400;
+}
+
 @media screen and (max-width: 991px) {
   .nav-link {
     color: #0026ff;
@@ -357,14 +357,6 @@ h4 {
 
   .nav-menu {
     background-color: #ececec;
-  }
-
-  .menu-button {
-    background-color: #0026ff;
-  }
-
-  .menu-button.w--open {
-    background-color: transparent;
   }
 
   .icon {
