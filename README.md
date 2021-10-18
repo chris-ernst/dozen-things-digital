@@ -7,10 +7,16 @@ A blog to document the progress in the Master of Design for Emergent Futures at 
 To see the site, please visit: https://chris-ernst.github.io/dozen-things-digital/
 
 ## Changelog
+
+0.2
+- Refine Image Credit style
+- Introduce Image CSS Grid to Articles
+
+
+0.1
 - Set Hover State on Cards
 - Introduced Wireframe Style
 - Set up Article Page
-- Content Updates
 
 
 ## Git Cheat Sheet
