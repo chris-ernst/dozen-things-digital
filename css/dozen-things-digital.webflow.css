@@ -42,13 +42,16 @@ h4 {
 }
 
 .hero {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 60vh;
-  margin-top: 60px;
+  height: 100vh;
+  margin-top: 0px;
+  margin-bottom: -40vh;
   padding: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -66,20 +69,24 @@ h4 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 38, 255, 0.5)), to(rgba(0, 38, 255, 0.5))), url('../images/joel-filipe-aYkDMrRo580-unsplash.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 38, 255, 0.5), rgba(0, 38, 255, 0.5)), url('../images/joel-filipe-aYkDMrRo580-unsplash.jpg');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
 }
 
 .hero-h1 {
   margin-bottom: 30px;
-  color: #0026ff;
+  color: #ececec;
   font-size: 5em;
   line-height: 1em;
   text-align: center;
 }
 
 .hero-h2 {
+  margin-bottom: 30px;
   font-family: 'Space Grotesk', sans-serif;
-  color: #333;
+  color: #ececec;
   font-size: 1.7em;
   line-height: 1.5em;
   font-weight: 500;
@@ -92,7 +99,7 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -201,7 +208,7 @@ h4 {
 }
 
 .text-link {
-  color: #333;
+  color: #ececec;
 }
 
 .text-link:hover {
@@ -276,7 +283,7 @@ h4 {
   text-align: center;
 }
 
-.article-h2 {
+.landing-subcategory-h2 {
   width: 100%;
   margin-bottom: 20px;
   font-family: 'Space Grotesk', sans-serif;
@@ -365,6 +372,16 @@ h4 {
   grid-template-rows: auto;
 }
 
+.landing-category-h1 {
+  display: none;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #0026ff;
+  font-size: 5em;
+  line-height: 1em;
+  text-align: left;
+}
+
 @media screen and (max-width: 991px) {
   .nav-link {
     color: #0026ff;
@@ -411,7 +428,7 @@ h4 {
     text-align: left;
   }
 
-  .article-h2 {
+  .landing-subcategory-h2 {
     margin-top: 10px;
     font-weight: 400;
     text-align: left;
@@ -432,13 +449,14 @@ h4 {
     -ms-grid-rows: auto auto auto auto;
     grid-template-rows: auto auto auto auto;
   }
+
+  .landing-category-h1 {
+    font-size: 4em;
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 479px) {
-  .hero {
-    height: auto;
-  }
-
   .header-text {
     height: auto;
   }
@@ -450,6 +468,10 @@ h4 {
   .container {
     padding-right: 14px;
     padding-left: 14px;
+  }
+
+  .landing-category-h1 {
+    font-size: 4em;
   }
 }
 
