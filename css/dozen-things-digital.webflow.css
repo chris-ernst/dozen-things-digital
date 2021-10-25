@@ -262,6 +262,12 @@ h4 {
   object-fit: cover;
 }
 
+.image.horizontal {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
 .article-header {
   margin-top: 80px;
 }
