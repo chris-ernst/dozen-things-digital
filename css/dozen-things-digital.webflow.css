@@ -126,7 +126,7 @@ h4 {
 }
 
 .content-card:hover {
-  box-shadow: -4px 4px 0 0 #b1b1b1;
+  box-shadow: -4px 4px 0 0 #0026ff;
   -webkit-transform: translate(5px, -5px);
   -ms-transform: translate(5px, -5px);
   transform: translate(5px, -5px);
@@ -211,12 +211,13 @@ h4 {
   display: none;
 }
 
-.text-link {
+.hero-text-link {
   color: #ececec;
+  text-decoration: none;
 }
 
-.text-link:hover {
-  color: #0026ff;
+.hero-text-link:hover {
+  color: #fff700;
 }
 
 .header-image {
