@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   color: #333;
   font-size: 14px;
   line-height: 20px;
@@ -69,14 +69,19 @@ h4 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 38, 255, 0.5)), to(rgba(0, 38, 255, 0.5))), url('../images/joel-filipe-aYkDMrRo580-unsplash.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 38, 255, 0.5), rgba(0, 38, 255, 0.5)), url('../images/joel-filipe-aYkDMrRo580-unsplash.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 38, 255, 0.8)), to(rgba(0, 38, 255, 0.8))), url('../images/joel-filipe-aYkDMrRo580-unsplash.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 38, 255, 0.8), rgba(0, 38, 255, 0.8)), url('../images/joel-filipe-aYkDMrRo580-unsplash.jpg');
   background-position: 0px 0px, 0px 0px;
   background-size: auto, cover;
 }
 
 .hero-h1 {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  padding: 20px 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ececec;
+  border-radius: 1px;
   color: #ececec;
   font-size: 5em;
   line-height: 1em;
@@ -93,7 +98,7 @@ h4 {
   text-align: center;
 }
 
-.project-grid {
+.project-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -212,12 +217,12 @@ h4 {
 }
 
 .hero-text-link {
-  color: #ececec;
+  color: #333;
   text-decoration: none;
 }
 
 .hero-text-link:hover {
-  color: #fff700;
+  color: #0026ff;
 }
 
 .header-image {
@@ -294,7 +299,7 @@ h4 {
   text-align: center;
 }
 
-.landing-subcategory-h2 {
+.landing-subcategory-h3 {
   width: 100%;
   margin-bottom: 20px;
   font-family: 'Space Grotesk', sans-serif;
@@ -303,6 +308,10 @@ h4 {
   line-height: 1.5em;
   font-weight: 500;
   text-align: center;
+}
+
+.container {
+  max-width: 1440px;
 }
 
 .content-card_teaser {
@@ -382,14 +391,13 @@ h4 {
   grid-template-rows: auto;
 }
 
-.landing-category-h1 {
-  display: none;
+.landing-category-h2 {
   width: 100%;
   margin-bottom: 10px;
   color: #0026ff;
-  font-size: 5em;
+  font-size: 4.1em;
   line-height: 1em;
-  text-align: left;
+  text-align: center;
 }
 
 .article_button {
@@ -418,7 +426,7 @@ h4 {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #ececec;
+  background-color: transparent;
 }
 
 .footer-text {
@@ -433,9 +441,54 @@ h4 {
   display: none;
 }
 
+.content-card_tag {
+  display: inline-block;
+  width: auto;
+  padding: 8px 14px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border: 1px none #000;
+  border-radius: 1px;
+  background-color: #ececec;
+}
+
+.content-card_tag.output {
+  background-color: #fff700;
+}
+
+.content-card_tag.input {
+  border-style: solid;
+  background-color: transparent;
+}
+
+.content-card_tag_text {
+  margin-bottom: 0px;
+  color: #333;
+  font-weight: 500;
+}
+
+.content-card_tag_text.inprogress {
+  color: #b1b1b1;
+}
+
+.content-card_tag_text.output {
+  color: #333;
+}
+
+.canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
 @media screen and (max-width: 991px) {
   .hero {
     margin-bottom: -30vh;
+  }
+
+  .content-card {
+    margin: 16px;
   }
 
   .nav-link {
@@ -461,6 +514,8 @@ h4 {
   }
 
   .hero-h1 {
+    padding: 0px;
+    border-style: none;
     text-align: left;
   }
 
@@ -471,6 +526,7 @@ h4 {
   .content-card {
     width: 100%;
     max-width: none;
+    margin: 20px 0px;
   }
 
   .content-card_thumbnail {
@@ -487,7 +543,7 @@ h4 {
     text-align: left;
   }
 
-  .landing-subcategory-h2 {
+  .landing-subcategory-h3 {
     margin-top: 10px;
     font-weight: 400;
     text-align: left;
@@ -507,7 +563,7 @@ h4 {
     grid-template-columns: 1fr;
   }
 
-  .landing-category-h1 {
+  .landing-category-h2 {
     font-size: 4em;
     text-align: left;
   }
@@ -531,7 +587,7 @@ h4 {
     padding-left: 14px;
   }
 
-  .landing-category-h1 {
+  .landing-category-h2 {
     font-size: 4em;
   }
 }
