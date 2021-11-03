@@ -120,10 +120,10 @@ h4 {
 }
 
 .content-card:hover {
-  box-shadow: -4px 4px 0 0 #0026ff;
-  -webkit-transform: translate(5px, -5px);
-  -ms-transform: translate(5px, -5px);
-  transform: translate(5px, -5px);
+  box-shadow: -4px -4px 0 0 #0026ff;
+  -webkit-transform: translate(5px, 5px);
+  -ms-transform: translate(5px, 5px);
+  transform: translate(5px, 5px);
   color: #0026ff;
 }
 
