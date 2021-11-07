@@ -127,6 +127,10 @@ h4 {
   color: #0026ff;
 }
 
+.content-card.hidden {
+  display: none;
+}
+
 .content-card_thumbnail {
   width: 350px;
   height: 230px;
@@ -229,7 +233,6 @@ h4 {
   display: flex;
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
   -webkit-box-orient: vertical;
@@ -426,23 +429,30 @@ h4 {
 .content-card_tag {
   display: inline-block;
   width: auto;
+  margin-right: 8px;
+  margin-bottom: 8px;
   padding: 8px 14px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  border: 1px none #000;
+  border: 1px solid #000;
   border-radius: 1px;
-  background-color: #ececec;
 }
 
-.content-card_tag.output {
+.content-card_tag.yellowhighlight {
+  border-style: none;
   background-color: #fff700;
 }
 
-.content-card_tag.input {
-  border-style: solid;
-  background-color: transparent;
+.content-card_tag.inprogress {
+  border-style: none;
+  background-color: #ececec;
+}
+
+.content-card_tag.bluehighlight {
+  border-style: none;
+  background-color: #405cff;
 }
 
 .content-card_tag_text {
@@ -451,12 +461,49 @@ h4 {
   font-weight: 500;
 }
 
-.content-card_tag_text.inprogress {
-  color: #b1b1b1;
+.content-card_tag_text.whitetext {
+  color: #fff;
 }
 
 .container-home {
   max-width: 1280px;
+}
+
+.article-video {
+  margin-top: 30px;
+}
+
+.article-h4 {
+  margin-top: 20px;
+  font-size: 1.7em;
+  line-height: 1.5em;
+  font-weight: 600;
+}
+
+.filtersection {
+  display: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.header-tag-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 991px) {
@@ -544,6 +591,13 @@ h4 {
   .container-home {
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  .header-tag-container {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 }
 
