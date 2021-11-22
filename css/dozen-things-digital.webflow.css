@@ -42,14 +42,12 @@ h4 {
 }
 
 .hero {
-  position: relative;
+  position: static;
   z-index: 1;
   display: -ms-grid;
   display: grid;
   width: 100vw;
   height: 100vh;
-  margin-top: 0px;
-  margin-bottom: -40vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -397,7 +395,7 @@ h4 {
 }
 
 .category-header {
-  padding-top: 50px;
+  padding-top: 15vh;
 }
 
 .article_button {
@@ -618,7 +616,6 @@ h4 {
 
 @media screen and (max-width: 991px) {
   .hero {
-    margin-bottom: -30vh;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     -ms-grid-rows: auto;
@@ -670,10 +667,6 @@ h4 {
 }
 
 @media screen and (max-width: 767px) {
-  .hero {
-    margin-bottom: -20vh;
-  }
-
   .hero-h1 {
     border-style: none;
     font-size: 6em;
@@ -750,10 +743,6 @@ h4 {
 }
 
 @media screen and (max-width: 479px) {
-  .hero {
-    margin-bottom: -10vh;
-  }
-
   .hero-h1 {
     font-size: 5em;
   }
