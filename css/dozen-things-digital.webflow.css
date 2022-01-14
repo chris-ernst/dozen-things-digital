@@ -41,6 +41,10 @@ h4 {
   font-weight: 600;
 }
 
+a {
+  text-decoration: underline;
+}
+
 .hero {
   position: static;
   z-index: 1;
@@ -126,6 +130,10 @@ h4 {
   display: none;
 }
 
+.content-card.disabled {
+  opacity: 0.4;
+}
+
 .content-card_thumbnail {
   position: relative;
   overflow: hidden;
@@ -160,6 +168,14 @@ h4 {
   font-family: 'Space Grotesk', sans-serif;
   color: #333;
   font-weight: 600;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-link.w--current {
+  color: #009c70;
 }
 
 .nav-link.disabled {
@@ -333,7 +349,6 @@ h4 {
 }
 
 .article-footer {
-  margin-top: 10vh;
   padding-top: 20px;
   background-color: transparent;
 }
@@ -427,7 +442,7 @@ h4 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 16vh;
+  margin-top: 10vh;
   padding: 20px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -552,6 +567,7 @@ h4 {
 
 .article-link-box {
   margin-top: 40px;
+  margin-bottom: 20px;
   padding: 16px 26px;
   background-color: rgba(51, 51, 51, 0.05);
 }
@@ -700,6 +716,8 @@ h4 {
 
 .highlights {
   margin-top: 10vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.05)));
+  background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.05));
 }
 
 .highlight-card {
@@ -774,6 +792,14 @@ h4 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.text-span-2 {
+  color: #009c70;
+}
+
+.text-span-3 {
+  color: #009c70;
 }
 
 @media screen and (max-width: 991px) {
