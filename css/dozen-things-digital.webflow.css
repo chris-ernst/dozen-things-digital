@@ -160,11 +160,13 @@ a {
   width: 100%;
   background-color: #fff;
   box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.07);
+  opacity: 1;
 }
 
 .nav-link {
   font-family: 'Space Grotesk', sans-serif;
   color: #333;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -204,7 +206,9 @@ a {
   height: 100%;
   margin-top: auto;
   margin-bottom: auto;
-  padding: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   color: #333;
   font-size: 1.4em;
   font-weight: 400;
@@ -675,7 +679,7 @@ a {
   border-width: 2px;
   border-color: #009c70;
   border-radius: 20px;
-  background-color: transparent;
+  background-color: #fff;
   color: #009c70;
   font-size: 1.2em;
   font-weight: 500;
@@ -683,6 +687,16 @@ a {
 
 .highlight-button:hover {
   background-color: rgba(0, 156, 112, 0.15);
+}
+
+.highlight-button.dark {
+  border-color: #ececec;
+  background-color: #333;
+  color: #ececec;
+}
+
+.highlight-button.dark:hover {
+  background-color: rgba(236, 236, 236, 0.25);
 }
 
 .landing-category-h3 {
@@ -702,6 +716,10 @@ a {
   font-size: 2em;
   font-weight: 600;
   text-align: center;
+}
+
+.highlight-project-title.light {
+  color: #ececec;
 }
 
 .highlight-card-title-wrapper {
@@ -753,6 +771,11 @@ a {
   color: #009c70;
 }
 
+.highlight-teaser-wrapper.dark {
+  border-style: solid;
+  border-width: 5px;
+}
+
 .highlight-teaser-inner {
   display: -webkit-box;
   display: -webkit-flex;
@@ -773,6 +796,11 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: #ececec;
+}
+
+.highlight-teaser-inner.dark {
+  background-color: #333;
 }
 
 .highlight-teaser-image-wrapper {
