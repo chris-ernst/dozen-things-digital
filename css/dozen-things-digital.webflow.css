@@ -473,6 +473,10 @@ a {
   border-radius: 2px;
 }
 
+.content-card_tag.yellowhighlight {
+  background-color: #fff700;
+}
+
 .content-card_tag.bluehighlight {
   border-style: none;
   background-color: #405cff;
@@ -672,8 +676,8 @@ a {
 }
 
 .highlight-button {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 10px 28px;
   border-style: solid;
   border-width: 2px;
@@ -699,6 +703,16 @@ a {
   background-color: rgba(236, 236, 236, 0.25);
 }
 
+.highlight-button.secondary {
+  border-color: #333;
+  background-color: #ececec;
+  color: #333;
+}
+
+.highlight-button.secondary:hover {
+  background-color: #d0d0d0;
+}
+
 .landing-category-h3 {
   width: 100%;
   margin-bottom: 30px;
@@ -711,7 +725,7 @@ a {
 
 .highlight-project-title {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   color: #333;
   font-size: 2em;
   font-weight: 600;
