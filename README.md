@@ -8,7 +8,7 @@ To see the site, please visit: https://chris-ernst.github.io/dozen-things-digita
 
 ## Changelog
 
-1.0
+1.0 
 - Rebranding to new Home and Article Design
 - Quote Formats
 - New Header Design
