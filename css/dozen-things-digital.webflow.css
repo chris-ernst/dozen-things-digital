@@ -399,10 +399,10 @@ a {
   overflow: hidden;
   width: 100%;
   margin-top: 30px;
-  -webkit-box-align: start;
-  -webkit-align-items: start;
-  -ms-flex-align: start;
-  align-items: start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
