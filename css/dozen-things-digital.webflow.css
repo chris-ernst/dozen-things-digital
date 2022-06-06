@@ -501,6 +501,10 @@ a {
   background-color: #ececec;
 }
 
+.content-card_tag.magentahilghlight {
+  background-color: #c57ee3;
+}
+
 .content-card_tag_text {
   margin-bottom: 0px;
   color: #333;
