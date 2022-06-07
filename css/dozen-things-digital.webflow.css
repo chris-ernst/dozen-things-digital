@@ -385,6 +385,11 @@ a {
   object-fit: cover;
 }
 
+.content-card-image.center {
+  -o-object-position: 100% 0%;
+  object-position: 100% 0%;
+}
+
 .text-span {
   font-weight: 400;
 }
