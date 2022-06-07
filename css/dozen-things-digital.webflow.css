@@ -733,6 +733,10 @@ a {
   background-color: #d0d0d0;
 }
 
+.highlight-button.disabled {
+  opacity: 0.5;
+}
+
 .landing-category-h3 {
   width: 100%;
   margin-bottom: 30px;
